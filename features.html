@@ -1,0 +1,1365 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apple Watch Technical Specifications</title>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style-features.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#"
+            ><img
+              width="40"
+              height="44"
+              src="assets/images/apple-logo-1756830583-removebg-preview.png"
+              alt=""
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <!-- White hamburger SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 80"
+                width="30"
+                height="30"
+              >
+                <rect width="80" height="10" rx="5" fill="white"></rect>
+                <rect y="30" width="80" height="10" rx="5" fill="white"></rect>
+                <rect y="60" width="80" height="10" rx="5" fill="white"></rect>
+              </svg>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact-us.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Sticky Pills Navigation -->
+    <div class="bg-dark container-fluid sticky-nav">
+      <ul
+        class="nav nav-pills justify-content-center"
+        id="specs-tabs"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link active"
+            id="display-tab"
+            data-bs-toggle="pill"
+            href="#display"
+            role="tab"
+            aria-controls="display"
+            aria-selected="true"
+            >Display</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="processor-tab"
+            data-bs-toggle="pill"
+            href="#processor"
+            role="tab"
+            aria-controls="processor"
+            aria-selected="false"
+            >Processor</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="storage-tab"
+            data-bs-toggle="pill"
+            href="#storage"
+            role="tab"
+            aria-controls="storage"
+            aria-selected="false"
+            >Fitness & Health</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="battery-tab"
+            data-bs-toggle="pill"
+            href="#battery"
+            role="tab"
+            aria-controls="battery"
+            aria-selected="false"
+            >Software</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="connectivity-tab"
+            data-bs-toggle="pill"
+            href="#connectivity"
+            role="tab"
+            aria-controls="connectivity"
+            aria-selected="false"
+            >Additional Features</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Specifications Section -->
+    <div class="">
+      <div class="tab-content" id="specs-tabs-content">
+        <!-- Display -->
+        <div
+          class="tab-pane fade show active"
+          id="display"
+          role="tabpanel"
+          aria-labelledby="display-tab"
+        >
+          <section id="display-features" class="py-5">
+            <div class="container">
+              <h2 class="display-4 text-center mb-5">
+                The Apple Watch Display: A Visual Marvel
+              </h2>
+
+              <!-- Feature 1 -->
+              <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                  <img
+                    src="assets/images/unnamed.png"
+                    class="img-fluid rounded shadow"
+                    alt="Always-On Retina Display"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h2>Always-On Retina Display</h2>
+                  <p class="lead">
+                    The Apple Watch's Always-On Retina display ensures that time
+                    and vital information are visible at all times. No need to
+                    lift your wrist or tap to activate the screen—it’s always
+                    ready when you are.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 2 -->
+              <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6 text-center">
+                  <img
+                    src="assets/images/bright-display.png"
+                    class="img-fluid rounded shadow"
+                    alt="Ultra Brightness"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h2>Ultra Bright for Sunlight</h2>
+                  <p class="lead">
+                    Whether you're outdoors or indoors, the display adjusts
+                    brightness intelligently. It's the brightest display ever on
+                    an Apple Watch, making it easy to read text even under harsh
+                    sunlight.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 3 -->
+              <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                  <img
+                    src="assets/images/watch-faces.png"
+                    class="img-fluid rounded shadow"
+                    alt="Customizable Faces"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h2>Customizable Watch Faces</h2>
+                  <p class="lead">
+                    Choose from a wide variety of watch faces, including new
+                    designs and personalized options. Tailor your watch face to
+                    fit your style, schedule, and needs.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 4 -->
+              <div class="row align-items-center mb-5 flex-md-row-reverse">
+                <div class="col-md-6 text-center">
+                  <img
+                    src="assets/images/durability.png"
+                    class="img-fluid rounded shadow"
+                    alt="Durability"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h2>Unmatched Durability</h2>
+                  <p class="lead">
+                    The Apple Watch display is engineered with Ion-X glass or
+                    Sapphire crystal for incredible scratch resistance and
+                    durability, ensuring your watch stays pristine even with
+                    everyday use.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Feature 5 -->
+              <div class="row align-items-center mb-5">
+                <div class="col-md-6">
+                  <img
+                    src="assets/images/color-accuracy.png"
+                    class="img-fluid rounded shadow"
+                    alt="Advanced Colors"
+                  />
+                </div>
+                <div class="col-md-6">
+                  <h2>Advanced Color Accuracy</h2>
+                  <p class="lead">
+                    With advanced color calibration, the display delivers
+                    vibrant, true-to-life colors, making everything from watch
+                    faces to photos look stunningly real.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section id="faq" class="py-5">
+            <div class="container">
+              <div class="text-center mb-5">
+                <h2 class="fw-bold">Frequently Asked Questions</h2>
+                <p class="text-white">
+                  Find answers to the most common questions we receive.
+                </p>
+              </div>
+              <div class="accordion" id="accordionExample">
+                <div class="row">
+                  <!-- Left Column Accordion -->
+                  <div class="col-md-6">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="true"
+                          aria-controls="collapseOne"
+                        >
+                          What is the Alway-On Retina Display?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          The Always-On Retina display allows you to see the
+                          time and important information at a glance, without
+                          needing to raise your wrist.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          Is the display bright enough for outdoor use?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Yes, the Apple Watch display is extremely bright, even
+                          in direct sunlight, thanks to its advanced brightness
+                          technology.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseThree"
+                        >
+                          can i customize the watch faces?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Yes, the Apple Watch allows you to customize your
+                          watch faces with various styles, complications, and
+                          colors to suit your preferences.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseFour"
+                        >
+                          Is the display always on?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFour"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Yes, the Always-On display feature allows the screen
+                          to remain dimly lit even when your wrist is down, so
+                          you don't need to raise your wrist to see the time.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Right Column Accordion -->
+                  <div class="col-md-6">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFive">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="true"
+                          aria-controls="collapseFive"
+                        >
+                          What type of display does the Apple Watch use?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingFive"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          The Apple Watch features a high-resolution OLED Retina
+                          display for vibrant and sharp visuals, ensuring
+                          excellent visibility.
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSix">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseSix"
+                        >
+                          How does the display work with the Always-On feature?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingSix"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          The Always-On feature lowers the brightness and
+                          reduces the refresh rate to save battery while keeping
+                          important information visible.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingSeven">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSeven"
+                          aria-expanded="false"
+                          aria-controls="collapseSeven"
+                        >
+                          Can I adjust the brightness of the display?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSeven"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingSeven"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          Yes, you can adjust the brightness of the display
+                          through the settings to make it more comfortable for
+                          your viewing.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingEight">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseEight"
+                          aria-expanded="false"
+                          aria-controls="collapseEight"
+                        >
+                          How durable is the display?
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseEight"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingEight"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          The Apple Watch display is made from durable sapphire
+                          crystal, which is resistant to scratches and damage
+                          from daily use.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Processor -->
+        <div
+          class="tab-pane fade"
+          id="processor"
+          role="tabpanel"
+          aria-labelledby="processor-tab"
+        >
+          <!-- Processor Overview Section -->
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col-md-12 text-center">
+                <h2 class="display-4 text-center mb-5">
+                  Apple Watch Processor: The Heart of Performance
+                </h2>
+                <p class="lead">
+                  The Apple Watch features a custom-designed processor that
+                  combines power, speed, and efficiency. Let’s dive into the
+                  details of how this chip enables seamless user experiences,
+                  enhances battery life, and powers health and fitness tracking.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 1: Processor Architecture -->
+          <div class="container mt-5">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-2 order-md-1">
+                <h2>Advanced Processor Architecture</h2>
+                <p class="lead">
+                  The Apple Watch is powered by a specialized System on Chip
+                  (SoC), such as the Apple S9 or S8 chip. These processors are
+                  built on advanced 64-bit architecture, offering a balance of
+                  power and efficiency tailored specifically for wearables. By
+                  integrating the CPU, GPU, and coprocessors, it maximizes
+                  performance while minimizing power consumption.
+                </p>
+                <p class="lead">
+                  This architecture ensures fast processing for apps,
+                  notifications, and health metrics, with improved performance
+                  over previous generations.
+                </p>
+              </div>
+              <div class="col-md-6 text-center order-1 order-md-2">
+                <img
+                  src="assets/images/chipset.png"
+                  alt="Apple Watch Processor Architecture"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 2: Performance & Speed -->
+          <div class="container mt-5">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-2">
+                <h2>Unmatched Performance & Speed</h2>
+                <p class="lead">
+                  With a focus on real-time responsiveness, the Apple Watch
+                  processor enables extremely fast load times for apps and a
+                  smooth, lag-free experience. Whether you’re navigating through
+                  health tracking, fitness apps, or responding to messages, the
+                  processor ensures a seamless and swift experience.
+                </p>
+                <p class="lead">
+                  Recent models feature enhanced CPU cores and high-performance
+                  GPU cores, providing a noticeable upgrade in both graphical
+                  and processing capabilities.
+                </p>
+              </div>
+              <div class="col-md-6 order-1 text-center">
+                <img
+                  src="assets/images/cpu.webp"
+                  alt="Apple Watch Performance"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 3: Power Efficiency -->
+          <div class="container mt-5">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-2 order-md-1">
+                <h2>Power Efficiency</h2>
+                <p class="lead">
+                  Despite its power, the Apple Watch processor is designed to
+                  maximize battery efficiency. The chip dynamically adjusts its
+                  performance, depending on the task at hand, ensuring that you
+                  can enjoy long battery life even while performing demanding
+                  activities like GPS tracking or using apps continuously.
+                </p>
+                <p class="lead">
+                  Apple’s custom energy-efficient cores play a critical role in
+                  this optimization, allowing for tasks like continuous heart
+                  rate monitoring to run for hours without significantly
+                  draining the battery.
+                </p>
+              </div>
+              <div class="col-md-6 text-center order-1 order-md-2">
+                <img
+                  src="assets/images/efiiciency.png"
+                  alt="Apple Watch Power Efficiency"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Section 4: Integrated Health Features -->
+          <div class="container mt-5">
+            <div class="row align-items-center">
+              <div class="col-md-6 order-2">
+                <h2>Integrated Health & Fitness Features</h2>
+                <p class="lead">
+                  The processor is central to the Apple Watch's health and
+                  fitness tracking capabilities. Equipped with a dedicated
+                  coprocessor, it handles complex sensor data from the watch’s
+                  heart rate monitor, accelerometer, and gyroscope. This allows
+                  the Apple Watch to track a wide range of metrics, from steps
+                  and workouts to blood oxygen levels and ECG readings.
+                </p>
+                <p class="lead">
+                  The advanced processing power ensures that all the health
+                  sensors are synchronized, providing real-time insights and
+                  data analysis, crucial for health-conscious users.
+                </p>
+              </div>
+              <div class="col-md-6 order-1 text-center">
+                <img
+                  src="assets/images/fitness.jpg"
+                  alt="Apple Watch Health Features"
+                  class="img-fluid rounded"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fitness -->
+        <div
+          class="tab-pane fade"
+          id="storage"
+          role="tabpanel"
+          aria-labelledby="storage-tab"
+        >
+          <section class="text-white text-center py-5">
+            <h2 class="display-4">
+              Health & Fitness Tracking with Apple Watch
+            </h2>
+            <p class="lead">
+              The perfect companion for a healthy and active lifestyle
+            </p>
+          </section>
+
+          <!-- Health and Fitness Overview -->
+          <section class="container mt-5">
+            <div class="row">
+              <div class="col-md-12">
+                <h2 class="text-center">Your Health, Your Fitness</h2>
+                <p class="text-center lead">
+                  The Apple Watch is not just a timepiece—it's a revolutionary
+                  health and fitness device designed to help you stay active,
+                  monitor your health, and achieve your fitness goals. With
+                  advanced sensors and powerful features, the Apple Watch gives
+                  you real-time insights into your well-being, making it easier
+                  to take charge of your health.
+                </p>
+                <p class="text-center lead">
+                  The Watch's combination of sensors and workout tracking
+                  capabilities enables users to track their activities, monitor
+                  their health metrics, and even receive personalized coaching
+                  and reminders, ensuring you stay on track with your wellness
+                  goals.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Sensors Overview Section -->
+          <section class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Advanced Sensors</h2>
+                  <p class="lead">
+                    The Apple Watch comes equipped with a suite of sensors that
+                    continuously monitor various aspects of your health. These
+                    sensors allow for accurate, real-time data collection,
+                    providing valuable insights into your physical condition:
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Heart Rate Sensor:</strong> Tracks your heart rate
+                      24/7 and provides alerts if it detects an unusual heart
+                      rate.
+                    </li>
+                    <li>
+                      <strong>ECG Sensor:</strong> Allows you to take an
+                      electrocardiogram to assess your heart's rhythm and
+                      health.
+                    </li>
+                    <li>
+                      <strong>Blood Oxygen Sensor:</strong> Measures your blood
+                      oxygen level, which is crucial for assessing respiratory
+                      health.
+                    </li>
+                    <li>
+                      <strong>Accelerometer & Gyroscope:</strong> These sensors
+                      track movement, steps, and activity patterns, helping
+                      monitor your physical activities and posture.
+                    </li>
+                    <li>
+                      <strong>Temperature Sensor:</strong> The latest Apple
+                      Watch models even include a body temperature sensor, which
+                      helps monitor health over time.
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-md-6 text-center order-1 order-md-2 text-center"
+                >
+                  <img
+                    src="assets/images/health_sleep_apnea__c1kevdjnev6u_large.jpg"
+                    alt="Health Sensors"
+                    class="img-fluid rounded"
+                  />
+                  <p class="text-center mt-3">
+                    <strong
+                      >Advanced sensors for continuous monitoring of your
+                      health</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Fitness Features Section -->
+          <section class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 order-2">
+                  <h2>Fitness Features</h2>
+                  <p class="lead">
+                    The Apple Watch provides a complete fitness tracking
+                    experience with features that help you stay motivated and on
+                    track with your fitness goals:
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Activity Rings:</strong> The three rings (Move,
+                      Exercise, and Stand) encourage users to stay active
+                      throughout the day. You can easily monitor your progress
+                      and close your rings with daily movement and exercise.
+                    </li>
+                    <li>
+                      <strong>Workout Tracking:</strong> Tracks a wide range of
+                      workouts, from walking and running to swimming and
+                      cycling, with specific metrics tailored to each activity.
+                    </li>
+                    <li>
+                      <strong>GPS Tracking:</strong> Built-in GPS allows you to
+                      accurately track your outdoor runs and cycling routes
+                      without needing your iPhone.
+                    </li>
+                    <li>
+                      <strong>Custom Goals:</strong> Set your personal fitness
+                      goals and get reminders throughout the day to ensure you
+                      stay on target.
+                    </li>
+                  </ul>
+                  <p class="lead">
+                    Whether you're a casual jogger or an avid cyclist, the Apple
+                    Watch ensures accurate and detailed tracking of every
+                    workout.
+                  </p>
+                </div>
+                <div class="col-md-6 text-center order-1 text-center">
+                  <img
+                    src="assets/images/fitness.png"
+                    alt="Fitness Tracking"
+                    class="img-fluid rounded"
+                  />
+                  <p class="text-center mt-3">
+                    <strong
+                      >Track your workouts and stay motivated with Activity
+                      Rings</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Health Monitoring Section -->
+          <section class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Health Monitoring</h2>
+                  <p class="lead">
+                    The Apple Watch offers advanced health monitoring tools to
+                    help you stay informed about your body's well-being:
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Sleep Tracking:</strong> Tracks your sleep
+                      patterns to help you understand your sleep quality and get
+                      insights on how to improve it.
+                    </li>
+                    <li>
+                      <strong>Fall Detection:</strong> Automatically detects
+                      falls during physical activity and sends a notification to
+                      your emergency contacts if you're unresponsive.
+                    </li>
+                    <li>
+                      <strong>Mindfulness:</strong> Guided breathing sessions
+                      and mindfulness reminders to help reduce stress and
+                      improve overall well-being.
+                    </li>
+                    <li>
+                      <strong>Blood Oxygen Level Monitoring:</strong> Provides
+                      insights into your respiratory health by measuring your
+                      blood oxygen levels.
+                    </li>
+                    <li>
+                      <strong>Temperature Monitoring:</strong> Tracks changes in
+                      your body temperature over time, helping you detect
+                      potential issues early.
+                    </li>
+                  </ul>
+                  <p>
+                    These features work together to provide a holistic view of
+                    your health, ensuring you stay in top shape.
+                  </p>
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                  <img
+                    src="assets/images/health_data__b3hpsrm1kope_large.jpg"
+                    alt="Health Monitoring"
+                    class="img-fluid rounded"
+                  />
+                  <p class="text-center mt-3">
+                    <strong
+                      >Advanced health monitoring to keep you safe and
+                      healthy</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Personalized Insights Section -->
+          <section class="py-5">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6 order-2">
+                  <h2>Personalized Insights</h2>
+                  <p class="lead">
+                    With the help of Apple’s AI-powered algorithms and machine
+                    learning, the Apple Watch not only tracks your fitness and
+                    health metrics but also provides personalized insights:
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Activity Trends:</strong> The Apple Watch uses
+                      past data to predict trends and provide actionable
+                      feedback, helping you stay on track to meet your fitness
+                      goals.
+                    </li>
+                    <li>
+                      <strong>Health Notifications:</strong> Based on your
+                      health data, Apple Watch will notify you about any
+                      concerning trends, such as a high or low heart rate or
+                      changes in your activity levels.
+                    </li>
+                    <li>
+                      <strong>Customized Coaching:</strong> Apple Watch can
+                      suggest workout types and health-related tips based on
+                      your fitness levels and preferences.
+                    </li>
+                  </ul>
+                  <p class="lead">
+                    These personalized insights ensure you get the most out of
+                    your health and fitness journey.
+                  </p>
+                </div>
+                <div class="col-md-6 text-center order-1">
+                  <img
+                    src="assets/images/health_insights__bpfdmumcjfxy_large.jpg"
+                    alt="Personalized Insights"
+                    class="img-fluid rounded"
+                  />
+                  <p class="text-center mt-3">
+                    <strong
+                      >Get personalized insights to stay on top of your
+                      wellness</strong
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Additonal Features -->
+        <div
+          class="tab-pane fade"
+          id="battery"
+          role="tabpanel"
+          aria-labelledby="battery-tab"
+        >
+          <section class="text-center py-5">
+            <h2 class="display-4">Apple Watch Software & Features</h2>
+            <p class="lead">
+              Discover the powerful software features that make the Apple Watch
+              smarter, more connected, and more customizable.
+            </p>
+          </section>
+
+          <!-- Software Overview -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row">
+                <div class="col-md-12 text-center">
+                  <h2>watchOS: The Heart of Apple Watch</h2>
+                  <p class="lead">
+                    The Apple Watch runs on the intuitive and powerful watchOS,
+                    which is designed to work seamlessly with the custom-built
+                    Apple processors, stunning displays, and integrated health
+                    features. watchOS delivers smooth app performance, real-time
+                    updates, and a personalized experience. It turns the Apple
+                    Watch into an extension of your iPhone, offering access to
+                    notifications, apps, and more at a glance.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- watchOS Features Section -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Key watchOS Features</h2>
+                  <p class="lead">
+                    watchOS integrates powerful performance with intuitive
+                    features that help you stay connected, productive, and
+                    healthy. Here's an overview of its key features:
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Customizable Watch Faces:</strong> WatchOS lets
+                      you personalize your Apple Watch with a variety of watch
+                      faces, each offering unique complications (widgets) for
+                      weather, fitness stats, and more.
+                    </li>
+                    <li>
+                      <strong>Real-time Notifications:</strong> Stay updated
+                      with incoming messages, calendar events, social media
+                      notifications, and more—all delivered to your wrist.
+                    </li>
+                    <li>
+                      <strong>App Navigation & Performance:</strong> The
+                      processor handles apps with ease, ensuring smooth
+                      transitions and seamless interactions for apps like Maps,
+                      Calendar, Messages, and more.
+                    </li>
+                    <li>
+                      <strong>Health & Fitness Tracking:</strong> watchOS
+                      features powerful health and fitness apps, including heart
+                      rate monitoring, ECG, blood oxygen tracking, and more.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                  <img
+                    src="assets/images/faces.jpg"
+                    alt="watchOS Features"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Siri on Apple Watch -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                  <h2>Siri on Apple Watch</h2>
+                  <p class="lead">
+                    Siri is integrated deeply into watchOS, allowing users to
+                    access voice commands and smart assistance at any time. The
+                    powerful processor and microphone array in the Apple Watch
+                    allow Siri to recognize commands even in noisy environments.
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Hands-Free Interaction:</strong> You can interact
+                      with your Apple Watch without touching it, using voice
+                      commands for navigation, sending messages, setting
+                      reminders, and more.
+                    </li>
+                    <li>
+                      <strong>Real-time Voice Recognition:</strong> With
+                      enhanced hardware and software integration, Siri on Apple
+                      Watch responds quickly and accurately to voice queries.
+                    </li>
+                    <li>
+                      <strong>Smart Home Control:</strong> Use Siri to control
+                      smart home devices directly from your wrist, including
+                      lights, thermostats, and smart locks.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 text-center order-1">
+                  <img
+                    src="assets/images/siri.png"
+                    alt="Siri on Apple Watch"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Notifications & App Ecosystem -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Notifications & App Ecosystem</h2>
+                  <p class="lead">
+                    watchOS offers an immersive app ecosystem that is built for
+                    quick and efficient interactions. Whether you're getting a
+                    message, checking your calendar, or tracking your workout,
+                    notifications and apps work seamlessly on your wrist.
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Instant Notifications:</strong> Receive
+                      notifications for texts, calls, and emails directly on
+                      your wrist. The Apple Watch vibrates and displays the
+                      notification so you can decide whether to take action.
+                    </li>
+                    <li>
+                      <strong>App Store on Wrist:</strong> Browse and install
+                      apps from the App Store directly on your Apple Watch, from
+                      fitness tracking to smart home control, offering endless
+                      customization and utility.
+                    </li>
+                    <li>
+                      <strong>Quick Replies:</strong> For incoming messages, you
+                      can quickly respond using predefined replies, voice
+                      dictation, or even scribbling text directly on the screen.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 text-center">
+                  <img
+                    src="assets/images/notifcation.png"
+                    alt="Notifications on Apple Watch"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Third-party Integrations -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                  <h2>Third-party Integrations</h2>
+                  <p class="lead">
+                    One of the strengths of the Apple Watch is its ability to
+                    work with a wide range of third-party apps and devices,
+                    making it a versatile tool for everyday life.
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Smart Home Integration:</strong> Apple Watch works
+                      seamlessly with HomeKit-enabled devices, allowing you to
+                      control your home’s lights, locks, and thermostats.
+                    </li>
+                    <li>
+                      <strong>Fitness & Health Apps:</strong> Popular
+                      third-party fitness apps like Strava, MyFitnessPal, and
+                      Nike Training Club integrate with Apple Watch to provide
+                      real-time workout data and sync with the Health app.
+                    </li>
+                    <li>
+                      <strong>Banking & Payments:</strong> Use Apple Pay to make
+                      secure, contactless payments directly from your wrist, and
+                      use apps like your bank’s mobile app for account
+                      management on the go.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 order-1 text-center">
+                  <img
+                    src="assets/images/3rd-party.png"
+                    alt="Third-Party Integrations"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Customizable Watch Faces -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Customizable Watch Faces</h2>
+                  <p class="lead">
+                    Personalization is key with the Apple Watch, and watchOS
+                    offers a range of customizable watch faces. You can choose
+                    from traditional analog, digital, and new modular faces,
+                    each with customizable complications for quick access to
+                    important information.
+                  </p>
+                  <ul class="lead">
+                    <li>
+                      <strong>Dynamic Watch Faces:</strong> Choose faces that
+                      adapt to the time of day or match your mood. You can
+                      customize the design with a variety of complications for
+                      weather, stocks, heart rate, and more.
+                    </li>
+                    <li>
+                      <strong>Unique Designs:</strong> Pick from a wide
+                      selection of curated watch faces, including fun themes,
+                      photo watch faces, and more.
+                    </li>
+                    <li>
+                      <strong>Complications:</strong> Add complications that
+                      provide at-a-glance information, like calendar events,
+                      weather, fitness goals, and more.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 text-center">
+                  <img
+                    src="assets/images/watch-faces.png"
+                    alt="Customizable Watch Faces"
+                    class="img-fluid rounded"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <!-- Connectivity -->
+        <div
+          class="tab-pane fade"
+          id="connectivity"
+          role="tabpanel"
+          aria-labelledby="connectivity-tab"
+        >
+          <section class="text-center py-4">
+            <h2 class="display-4">Additional Features</h2>
+            <p class="lead">
+              Explore the latest features, performance, and design of the Apple
+              Watch.
+            </p>
+          </section>
+
+          <!-- Battery Life Section -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Battery Life</h2>
+                  <p class="lead">
+                    The Apple Watch has seen significant improvements in battery
+                    life, thanks to optimized hardware and software integration.
+                    The latest models can last up to 18 hours with typical use,
+                    while the Apple Watch Ultra extends this to 36 hours.
+                  </p>
+                  <p class="lead">
+                    Apple’s efficient processor dynamically adjusts performance
+                    to ensure longer battery life, while the always-on display
+                    has been optimized to reduce energy consumption.
+                  </p>
+                  <p class="lead">
+                    Low Power Mode allows users to stretch battery life even
+                    further without sacrificing critical functionalities like
+                    heart rate tracking and activity monitoring.
+                  </p>
+                </div>
+                <div class="col-md-6 text-center order-1 order-md-2">
+                  <img
+                    src="assets/images/battery.png"
+                    alt="Battery Life"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Storage Section -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                  <h2>Storage</h2>
+                  <p class="lead">
+                    The latest Apple Watch models come with varying storage
+                    capacities, ranging from 32GB to 64GB, depending on the
+                    model. This storage is used to store apps, music, podcasts,
+                    photos, and more.
+                  </p>
+                  <p class="lead">
+                    With more storage, you can download more apps and content
+                    directly to the watch without needing to rely on an iPhone.
+                    It also allows for better overall performance when using
+                    multiple apps simultaneously.
+                  </p>
+                  <p class="lead">
+                    32GB of storage is typically sufficient for most users, but
+                    heavy media users may prefer the 64GB option for storing
+                    more music or podcasts offline.
+                  </p>
+                </div>
+                <div class="col-md-6 order-1 text-center">
+                  <img
+                    src="assets/images/sideview.png"
+                    alt="Storage"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- Connectivity Section -->
+          <section class="section-bg">
+            <div class="container mt-5">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2 order-md-1">
+                  <h2>Connectivity</h2>
+                  <p class="lead">
+                    The Apple Watch offers seamless connectivity with Bluetooth,
+                    Wi-Fi, and cellular (on some models). The Bluetooth feature
+                    allows the watch to sync with your iPhone, while Wi-Fi lets
+                    you stay connected to your home or office network when your
+                    phone is out of range.
+                  </p>
+                  <p class="lead">
+                    For the cellular-enabled models, you can make calls, send
+                    messages, and stream music directly from the watch, even
+                    without your phone nearby. The Ultra also supports
+                    Ultra-Wideband (UWB) for improved location tracking and
+                    enhanced compatibility with other Apple devices.
+                  </p>
+                  <p class="lead">
+                    With watchOS, you can also sync your Apple Watch with other
+                    Apple devices like your Mac or Apple TV, providing a
+                    seamless experience across the Apple ecosystem.
+                  </p>
+                </div>
+                <div class="col-md-6 order-1 order-md-2 text-center">
+                  <img
+                    src="assets/images/connectvity.png"
+                    alt="Connectivity"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+          <section class="section-bg py-5">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-md-6 order-2">
+                  <h2>Apple Pay</h2>
+                  <p class="lead">
+                    Apple Pay on the Apple Watch allows for fast, secure, and
+                    contactless payments directly from your wrist. Simply
+                    double-click the side button, authenticate with your wrist,
+                    and pay with just a tap.
+                  </p>
+                  <p class="lead">
+                    With Apple Pay, you can make payments at millions of
+                    locations worldwide, and it's supported by major credit and
+                    debit cards. Your payment information is securely encrypted
+                    and stored in the Apple Watch, ensuring safe transactions.
+                  </p>
+                  <p class="lead">
+                    Additionally, Apple Pay allows you to make online purchases
+                    in apps or on the web using your Apple Watch, further
+                    enhancing your shopping experience.
+                  </p>
+                </div>
+                <div class="col-md-6 order-1 text-center">
+                  <img
+                    src="assets/images/apple-pay.jpg"
+                    alt="Apple Pay"
+                    class="img-fluid rounded shadow"
+                  />
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="home.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="about.html">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="about.html#team">Team</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <p class="text-center">&copy;2024 Apple Inc | All Rights Reserved</p>
+    </footer>
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+img,
+a,
+span {
+  display: inline-block;
+}
+/* Custom CSS for header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: #000; /* Black background */
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: orange;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd; /* Lighter color on hover */
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* White underline */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #ddd;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+/* Hamburger menu SVG */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white; /* White color for the hamburger icon */
+}
+
+.hero {
+  background-color: #111;
+  color: white;
+  padding: 40px 10px;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ffc34d;
+}
+
+.card-body h2 {
+  color: #ffa500;
+}
+/* Form Styling */
+/* .card {
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      } */
+.bg-dark {
+  background-color: #222 !important;
+}
+
+.contact-form {
+  background: linear-gradient(135deg, #222, #111);
+}
+
+.contact-card {
+  background-color: #333;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-control {
+  border: none;
+}
+
+/* Button Styling */
+/* .btn {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      } */
+
+/* .btn:hover {
+        background-color: #0056b3;
+      } */
+.form-control::placeholder {
+  color: #adb5bd;
+  opacity: 1;
+}
+:-ms-input-placeholder {
+  color: #adb5bd;
+}
+::-ms-input-placeholder {
+  color: #adb5bd;
+}
+
+.contact-info {
+  background: linear-gradient(270deg, #111, #333);
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #000;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.social-icon__link:hover ion-icon {
+  color: #ffa500;
+  transition: 0.5s;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.contact-info h3 {
+  color: #ffa500;
+}

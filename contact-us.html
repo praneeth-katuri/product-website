@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us | Apple Watch Features</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style-contactus.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img
+              width="40"
+              height="44"
+              src="assets/images/apple-logo-1756830583-removebg-preview.png"
+              alt=""
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon">
+              <!-- White hamburger SVG -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 100 80"
+                width="30"
+                height="30"
+              >
+                <rect width="80" height="10" rx="5" fill="white"></rect>
+                <rect y="30" width="80" height="10" rx="5" fill="white"></rect>
+                <rect y="60" width="80" height="10" rx="5" fill="white"></rect>
+              </svg>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="features.html">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="gallery.html">Gallery</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section -->
+    <section class="hero text-white text-center py-5">
+      <h1 class="display-4">Contact Us</h1>
+      <p>We'd love to hear from you! Get in touch with us below.</p>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-form bg-dark py-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="contact-card card shadow-sm">
+              <div class="card-body">
+                <h2 class="text-center mb-4">Get in Touch</h2>
+                <form>
+                  <div class="form-group mb-3">
+                    <label for="name">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control bg-dark"
+                      id="name"
+                      placeholder="Enter your name"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="email">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control bg-dark"
+                      id="email"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div class="form-group mb-3">
+                    <label for="message">Message</label>
+                    <textarea
+                      class="form-control bg-dark"
+                      id="message"
+                      rows="5"
+                      placeholder="Write your message here"
+                      required
+                    ></textarea>
+                  </div>
+                  <div class="form-group text-center">
+                    <button type="submit" class="btn btn-outline-warning">
+                      Send Message
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Information Section -->
+    <section class="contact-info py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h3><i class="fas fa-map-marker-alt"></i> Our Address</h3>
+            <p>1234 Apple Watch Street, Cupertino, CA 95014, USA</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3><i class="fas fa-phone-alt"></i> Phone</h3>
+            <p>+1 800 123 4567</p>
+          </div>
+          <div class="col-md-4 text-center">
+            <h3><i class="fas fa-envelope"></i> Email</h3>
+            <p>support@applewatch.com</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <ul class="social-icon">
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-linkedin"></ion-icon>
+          </a>
+        </li>
+        <li class="social-icon__item">
+          <a class="social-icon__link" href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+        </li>
+      </ul>
+      <ul class="menu">
+        <li class="menu__item">
+          <a class="menu__link" href="home.html">Home</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="about.html">About</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="gallery.html">Gallery</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="about.html#team">Team</a>
+        </li>
+        <li class="menu__item">
+          <a class="menu__link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <p class="text-center">&copy;2024 Apple Inc | All Rights Reserved</p>
+    </footer>
+    <!-- Bootstrap JS and Dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>

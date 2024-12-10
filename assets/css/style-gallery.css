@@ -1,0 +1,295 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+img,
+a,
+span {
+  display: inline-block;
+}
+/* Custom CSS for header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: #000; /* Black background */
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: orange;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd; /* Lighter color on hover */
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* White underline */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #ddd;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+/* Hamburger menu SVG */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white; /* White color for the hamburger icon */
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #000;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.hero {
+  /* background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.8)
+  ); */
+  background: linear-gradient(0deg, rgb(12, 12, 13), rgb(0, 0, 0) 30%);
+  padding-block: 76px 195px;
+}
+
+.hero img {
+  display: block;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.hero h2 {
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 21px;
+  line-height: 2;
+}
+
+.hero img:first-child {
+  padding-top: 3rem;
+}
+
+.hero-text p {
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@media (max-width: 765px) {
+  .hero-text p {
+    max-width: 90%;
+    text-align: justify;
+  }
+}
+
+.section-design {
+  background-color: #000;
+  color: #fff;
+}
+
+.survival {
+  max-width: 30%;
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+@media (max-width: 765px) {
+  .survival {
+    max-width: 100%;
+  }
+}
+
+.section-design .features {
+  display: flex;
+  justify-content: center;
+}
+.section-design figure {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-design figure span:nth-of-type(1) {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.section-design figure span:nth-of-type(2) {
+  font-size: 21px;
+}
+
+.section-design div.container p {
+  max-width: 70%;
+  font-size: 21px;
+  line-height: 2;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+@media (max-width: 765px) {
+  .section-design div.container p {
+    max-width: 90%;
+  }
+}
+
+.image-container {
+  overflow: hidden;
+  position: relative;
+  width: 100%; /* Adjust to your desired width */ /* Optional: Set a maximum width */
+}
+
+.text-overlay {
+  position: absolute;
+  top: 70%; /* Position the text vertically in the middle */
+  left: 40%; /* Position the text horizontally in the middle */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjust the text to be perfectly centered */
+  color: white; /* Text color */
+  font-size: 24px; /* Text size */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional: Add a shadow for better visibility */
+}
+
+@media (max-width: 768px) {
+  .text-overlay {
+    font-size: 1rem; /* Decrease text size on smaller screens */
+    width: 90%;
+    padding: 2rem; /* Reduce padding on smaller screens */
+    top: 50%;
+    left: 50%;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-overlay {
+    font-size: 1.2rem; /* Further reduce text size on very small screens */
+  }
+}
+
+/* new stuff */
+figure span:first-child {
+  color: orange;
+}
+
+h2 {
+  color: orange;
+}
+strong {
+  color: orange;
+}
+
+.social-icon__link:hover ion-icon {
+  color: #ffa500;
+  transition: 0.5s;
+}

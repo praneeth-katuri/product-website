@@ -1,0 +1,329 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+body {
+  color: #fff;
+  background-color: #000;
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  overflow-y: visible;
+}
+
+img,
+a,
+span {
+  display: inline-block;
+}
+/* Custom CSS for header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  background-color: #000; /* Black background */
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1rem;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link.active {
+  color: orange;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ddd; /* Lighter color on hover */
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: #fff; /* White underline */
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.navbar-nav .nav-link:hover::after {
+  width: 100%; /* Full underline on hover */
+}
+
+.navbar-brand {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.navbar-brand:hover {
+  color: #ddd;
+}
+
+.nav-item {
+  margin: 0 10px;
+}
+
+/* Hamburger menu SVG */
+.navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler-icon {
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-toggler-icon svg {
+  width: 30px;
+  height: 30px;
+  fill: white; /* White color for the hamburger icon */
+}
+
+.hero {
+  background-color: #0c0c0c;
+  color: white;
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.hero h1 {
+  color: #ffc34d;
+}
+
+h2 {
+  color: orange;
+}
+
+.team img {
+  border-radius: 50%;
+}
+.cta-btn {
+  background-color: #0071e3;
+  color: white;
+  border-radius: 50px;
+  padding: 0.75rem 1.5rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.cta-btn:hover {
+  background-color: #005bb5;
+}
+.social-links i {
+  font-size: 1.5rem;
+  color: #0071e3;
+}
+.social-links i:hover {
+  color: #005bb5;
+}
+/* team cards */
+/* Card Styles */
+.team-member-card {
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-member-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-member-img {
+  transition: transform 0.3s ease;
+}
+
+.team-member-card:hover .team-member-img {
+  transform: scale(1.05);
+}
+
+.card {
+  background-color: rgb(197, 191, 191);
+}
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-text {
+  font-size: 0.9rem;
+  color: #6c757d;
+}
+
+.card-body h5 {
+  font-size: 1.2rem;
+  color: #333;
+}
+
+.card-body p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* Contact Section Styles */
+.contact-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.card-text {
+  color: #555;
+  font-size: 1rem;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.social-links a:hover {
+  color: #0056b3;
+}
+
+.social-links i {
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover i {
+  color: #0056b3;
+}
+
+.btn-lg {
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+/* Mission Section Background */
+.mission-section {
+  background: linear-gradient(45deg, #111, #000);
+  padding: 60px 0;
+}
+
+/* History Section Background */
+.history-section {
+  background: linear-gradient(135deg, #222, #111);
+  padding: 60px 0;
+}
+
+/* Values Section Background */
+.values-section {
+  background: linear-gradient(90deg, #333, #222);
+  padding: 60px 0;
+}
+
+/* Team Section Background */
+.team-section {
+  background: linear-gradient(180deg, #222, #333);
+  padding: 60px 0;
+}
+
+/* Contact Section Background */
+.contact-section {
+  background: linear-gradient(270deg, #111, #333);
+  padding: 60px 0;
+}
+
+@media (max-width: 765px) {
+  .mission-section h2,
+  .history-section h2 {
+    text-align: center;
+  }
+  .mission-section p,
+  .history-section p {
+    text-align: justify;
+  }
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #000;
+  min-height: 100px;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.social-icon,
+.menu {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+  flex-wrap: wrap;
+}
+
+.social-icon__item,
+.menu__item {
+  list-style: none;
+}
+
+.social-icon__link {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+}
+.social-icon__link:hover {
+  transform: translateY(-10px);
+}
+
+.social-icon__link:hover ion-icon {
+  color: #ffa500;
+  transition: 0.5s;
+}
+
+.menu__link {
+  font-size: 1.2rem;
+  color: #fff;
+  margin: 0 10px;
+  display: inline-block;
+  transition: 0.5s;
+  text-decoration: none;
+  opacity: 0.75;
+  font-weight: 300;
+}
+
+.menu__link:hover {
+  opacity: 1;
+}
+
+.footer p {
+  color: #fff;
+  margin: 15px 0 10px 0;
+  font-size: 1rem;
+  font-weight: 300;
+}
